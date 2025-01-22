@@ -397,8 +397,8 @@ def cnn():
     test_acc_all.append(accuracy)
     test_loss_all.append(losses)
             
-    for i in range(len(test_acc_all)):
-        print(round(test_acc_all[i],2), round(test_loss_all[i],2))
+    #for i in range(len(test_acc_all)):
+     #   print(round(test_acc_all[i],2), round(test_loss_all[i],2))
  
 
     #plotting_graph (val_accuracies_all, val_losses_all)
