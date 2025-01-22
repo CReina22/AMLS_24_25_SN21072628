@@ -1,5 +1,5 @@
 # AMLS_assignment24_25
-Dataset: https://medmnist.com/
+Dataset: https://medmnist.com/ or https://github.com/MedMNIST/MedMNIST
 ## Description
 Task 1 (Binary Classification) - The BreastMNIST dataset was used to train machine learning and deep learning models to classify images into malignant (cancerous) and benign/normal (non-cancerous) categories. The dataset consists of 780 28x28 grayscale images, pre-split into training (546 images), validation (78 images), and testing (156 images) sets. The models tested included Random Forest (RF), Dummy Classifier, Support Vector Machine (SVM), and Convolutional Neural Network (CNN).
 
