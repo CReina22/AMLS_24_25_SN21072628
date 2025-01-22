@@ -21,15 +21,16 @@ Task 2 (Multi-class Classification) - The BreastMNIST dataset was used to train 
 | requirments.txt             | Contains all libraries needed to be installed                                  |
 
 ## Packages
--scikit-learn
--numpy
--scikit-image
--matplotlib
--scikit-learn
--seaborn
--torchvision
--medmnist
--tqdm
+- scikit-learn
+- numpy
+- scikit-image
+- matplotlib
+- scikit-learn
+- seaborn
+- torchvision
+- medmnist
+- tqdm
+- torch
 
 ## To successfully run the code
 1. Create and activate a virtual environment
