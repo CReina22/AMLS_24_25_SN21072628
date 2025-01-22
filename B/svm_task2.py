@@ -5,7 +5,7 @@ from sklearn.model_selection import GridSearchCV
 import seaborn as sns
 import matplotlib.pyplot as plt
 
-import os
+
 
 
 def svm_model_task2( x_train_task2, x_val_task2, x_test_task2, y_train_labels_task2, y_val_labels_task2, y_test_labels_task2):
