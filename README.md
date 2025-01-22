@@ -33,13 +33,14 @@ Task 2 (Multi-class Classification) - The BreastMNIST dataset was used to train 
 - torch
 
 ## To successfully run the code
-1. Create and activate a virtual environment
+1. Clone the repository
+2. Create and activate a virtual environment
     - To create a virtual environment:
         Unix/macOS: `python3 -m venv .venv`
         Windows: `py -m venv .venv`
     - To activate the virtual environment:
     Unix/macOS: `source .venv/bin/activate`
     Windows: `.venv\Scripts\activate`
-2. Install the requirement which consists of all libraries
+3. Install the requirement which consists of all libraries
     - `pip install -r requirements.txt`
-3. Type `python main.py` in terminal to run code
+4. Type `python main.py` in terminal to run code
