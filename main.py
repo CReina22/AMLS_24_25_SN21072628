@@ -178,80 +178,80 @@ def hog_data_task1(train_dataset, val_dataset, test_dataset):    # Perform HOG f
     return x_features_train, x_features_val,x_features_test
 
 
-def hog_data_task2(train_dataset, val_dataset, test_dataset):    # Perform HOG feature extraction
-    sample_hog_features= hog(
-        train_dataset[0], 
-        block_norm='L2',
-        orientations=9, 
-        pixels_per_cell=(7, 7), 
-        cells_per_block=(2, 2), 
-        visualize=False, 
-        feature_vector=True,
-        channel_axis=-1
-    )
+#def hog_data_task2(train_dataset, val_dataset, test_dataset):    # Perform HOG feature extraction
+ #   sample_hog_features= hog(
+ #       train_dataset[0], 
+ #       block_norm='L2',
+ #       orientations=9, 
+  #      pixels_per_cell=(7, 7), 
+ #       cells_per_block=(2, 2), 
+ #       visualize=False, 
+ #       feature_vector=True,
+ #       channel_axis=-1
+ #   )
 
     # Number of features per image
-    num_features = len(sample_hog_features)
+ #   num_features = len(sample_hog_features)
 
 
     # Train
-    x_features_train = np.empty((len(train_dataset),num_features))  # Assuming each image has 324 HOG features
+#    x_features_train = np.empty((len(train_dataset),num_features))  # Assuming each image has 324 HOG features
 
     # Loop through each image in the dataset
-    for x in range(len(train_dataset)):
+#    for x in range(len(train_dataset)):
         # Compute the HOG features for the current image
-        hog_features, hog_image = hog(
-            train_dataset[x],  # Process the current image in the loop
-            block_norm='L2',
-            orientations=9,
-            pixels_per_cell=(7, 7),
-            cells_per_block=(2, 2),
-            visualize=True,
-            feature_vector=True,
-            channel_axis=-1
-        )
+#        hog_features, hog_image = hog(
+#            train_dataset[x],  # Process the current image in the loop
+#            block_norm='L2',
+#            orientations=9,
+#            pixels_per_cell=(7, 7),
+#            cells_per_block=(2, 2),
+#            visualize=True,
+#            feature_vector=True,
+#            channel_axis=-1
+#        )
         # Store the HOG features for the current image in the x_features array
-        x_features_train[x] = hog_features  # Assign the feature vector for each image
+ #       x_features_train[x] = hog_features  # Assign the feature vector for each image
 
     #Valid
-    x_features_val = np.empty((len(val_dataset), num_features))  # Assuming each image has 324 HOG features
+  #  x_features_val = np.empty((len(val_dataset), num_features))  # Assuming each image has 324 HOG features
 
     # Loop through each image in the dataset
-    for x in range(len(val_dataset)):
+  #  for x in range(len(val_dataset)):
         # Compute the HOG features for the current image
-        hog_features, hog_image = hog(
-            val_dataset[x],  # Process the current image in the loop
-            block_norm='L2',
-            orientations=9,
-            pixels_per_cell=(7, 7),
-            cells_per_block=(2, 2),
-            visualize=True,
-            feature_vector=True,
-            channel_axis=-1
-        )
+  #      hog_features, hog_image = hog(
+  #          val_dataset[x],  # Process the current image in the loop
+  #          block_norm='L2',
+  #          orientations=9,
+  #          pixels_per_cell=(7, 7),
+  #          cells_per_block=(2, 2),
+  #          visualize=True,
+  #          feature_vector=True,
+  #          channel_axis=-1
+  #      )
         # Store the HOG features for the current image in the x_features array
-        x_features_val[x] = hog_features  # Assign the feature vector for each image
+ #       x_features_val[x] = hog_features  # Assign the feature vector for each image
 
     #Test
-    x_features_test = np.empty((len(test_dataset), num_features))  # Assuming each image has 324 HOG features
+#    x_features_test = np.empty((len(test_dataset), num_features))  # Assuming each image has 324 HOG features
 
     # Loop through each image in the dataset
-    for x in range(len(test_dataset)):
+#    for x in range(len(test_dataset)):
         # Compute the HOG features for the current image
-        hog_features, hog_image = hog(
-            test_dataset[x],  # Process the current image in the loop
-            block_norm='L2',
-            orientations=9,
-            pixels_per_cell=(7, 7),
-            cells_per_block=(2, 2),
-            visualize=True,
-            feature_vector=True,
-            channel_axis=-1
-        )
+#        hog_features, hog_image = hog(
+#            test_dataset[x],  # Process the current image in the loop
+#            block_norm='L2',
+#            orientations=9,
+#            pixels_per_cell=(7, 7),
+#            cells_per_block=(2, 2),
+#            visualize=True,
+#            feature_vector=True,
+#            channel_axis=-1
+#        )
         # Store the HOG features for the current image in the x_features array
-        x_features_test[x] = hog_features  # Assign the feature vector for each image
+#        x_features_test[x] = hog_features  # Assign the feature vector for each image
 
-    return x_features_train, x_features_val,x_features_test
+#    return x_features_train, x_features_val,x_features_test
 
 
 
