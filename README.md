@@ -43,4 +43,4 @@ Task 2 (Multi-class Classification) - The BreastMNIST dataset was used to train 
     Windows: `.venv\Scripts\activate`
 3. Install the requirement which consists of all libraries
     - `pip install -r requirements.txt`
-4. Type `python main.py` in terminal to run code
+4. Enter `python main.py` into the terminal to run code
