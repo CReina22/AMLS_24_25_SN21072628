@@ -19,6 +19,8 @@ Task 2 (Multi-class Classification) - The BreastMNIST dataset was used to train 
 | CNN_task2.py                | Code for training, validating and testing CNN model  (Task 2)                  |
 | main.py                     | Code for preprocessing of data and calling the ML and DL models                |
 | requirments.txt             | Contains all libraries needed to be installed                                  |
+| best_model_task2.pth        | Pre trained CNN model (Task 2)                                                 |
+| best_model.pth              | Pre trained CNN model (Task 1)                                                 |
 
 ## Packages
 - scikit-learn
