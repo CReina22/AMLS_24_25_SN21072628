@@ -1,0 +1,10 @@
+scikit-learn
+numpy
+scikit-image
+matplotlib
+scikit-learn
+seaborn
+torchvision
+medmnist
+tqdm
+torch
